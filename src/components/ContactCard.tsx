@@ -1,11 +1,13 @@
 "use client";
 
-import { Contact } from '@prisma/client';
+import { Contact, Note } from '@prisma/client';
 import Card from 'react-bootstrap/Card';
-import { Image } from 'react-bootstrap';
+import { Image, ListGroup } from 'react-bootstrap';
 import Link from 'next/link';
+import NoteItem from './NoteItem';
+import AddNoteForm from './AddNoteForm';
 
-const ContactCard = ({ contact }: { contact: Contact }) => {
+const ContactCard = ({ contact, notes }: { contact: Contact; notes: Note[] }) => {
   return (
     <>
       <Card className="h-100">
@@ -18,6 +20,10 @@ const ContactCard = ({ contact }: { contact: Contact }) => {
             <br />
             <Card.Subtitle>{contact.description}</Card.Subtitle>
         </Card.Body>
+        <ListGroup variant="flush">
+          {notes.map((note) => <NoteItem key={note.id} note={note}/>)}
+        </ListGroup>
+        <AddNoteForm contactId={contact.id} />
         <Card.Footer>
         <Link href={`edit/${contact.id}`}>Edit</Link>
         </Card.Footer>
