@@ -51,41 +51,41 @@ Log in with a default account from `config/settings.development.json` (e.g. `joh
 The home page. Use the login menu in the navbar to sign in or register.
 
 ### Sign In page
-<img src="doc/signin-page.png">
+<img src="doc/digitsignin.png">
 
 Log in with an existing email and password.
 
 ### Register page
-<img src="doc/register-page.png">
+<img src="doc/digitsignup.png">
 
 Create a new account.
 
 ### Landing page (logged in)
-<img src="doc/landing-after-login-page.png">
+<img src="doc/digitlandinglogin.png">
 
 After login, the navbar adds the Add Contacts and List Contacts to the navbar.
 
 ### Add Contact page
-<img src="doc/add-stuff-page.png">
+<img src="doc/addcontact.png">
 
 A form to add a contact with first name, last name, address, an image, and description.
 
 ### List Contacts page
-<img src="doc/list-stuff-page.png">
+<img src="doc/listcontact.png">
 
 Shows the contacts created. Click "Edit" on a row to change it.
 
 ### Edit page
-<img src="doc/edit-stuff-page.png">
+<img src="doc/editpage.png">
 
 Change and save contact information.
 
 ### Admin landing page
-<img src="doc/admin-landing-page.png">
+<img src="doc/adminlanding.png">
 
 Admin users get an extra "Admin" link in the navbar.
 
 ### Admin page
-<img src="doc/admin-list-stuff-page.png">
+<img src="doc/adminpage.png">
 
 Lists every contact. Non-admins are redirected to the Not Authorized page, even if they type the URL.
